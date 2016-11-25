@@ -2,6 +2,7 @@
 CREATE TABLE `imgs` (
   `id` int(255) NOT NULL,
   `url` text,
+  `src` text,
   `nombre` text,
   `fecha` timestamp NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
@@ -10,6 +11,7 @@ CREATE TABLE `imgs` (
 CREATE TABLE `urls` (
   `id` int(255) NOT NULL,
   `url` text,
+  `src` text,
   `crawl` enum('0','1') DEFAULT '0',
   `fecha` timestamp NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;

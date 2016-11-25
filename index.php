@@ -46,7 +46,7 @@ function crawl_page( $url, $depth = 5 ) {
             $src = $preURL . $basedir_src;
         } //$src == $basedir_src
         @$tamano = getimagesize( $src );
-        if ( $tamano[ 0 ] > 600 )
+        if ( $tamano[ 0 ] > 300 )
             array_push( $imgs, array(
                  'src' => $src,
                 "tamano" => $tamano 
